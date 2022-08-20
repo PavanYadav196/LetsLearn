@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styling the header */
+header {
+  width: 100%;
+  height: 12vh;
+}
+
+/* Styling the navbar */
+nav {
+  /* border: 2px solid red; */
+  /* height: 8vh; */
+  background-color: black;
+  display: flex;
+  /* height: 3.5rem; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+/* Styling the navbar-image */
+.navbar-image > img {
+  width: 10vh;
+  margin-inline: 1em;
+  z-index: 1;
+  /* box-shadow: 5px 6px 5px green; */
+}
+
+/* Styling navbar ul */
+.navbar {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 17px;
+  padding-inline: 10px;
+}
+
+/* Styling navbar a */
+.navbar li a {
+  text-decoration: none;
+  padding-inline: 1.5em;
+  margin-inline: 0.5rem;
+  color: whitesmoke;
+}
+
+/* adding and styling the hover  */
+.navbar li a:hover,
+a:focus {
+  color: #909090;
+}
+/* Styling the main tag */
+main {
+  background-color: rgb(35, 32, 32);
+  margin-bottom: 2rem;
+  min-height: calc(100vh - 8vh - 8vh);
+}
+/* Styling the blog-posts */
+.section-1 {
+  height: 90vh;
+  width: 75%;
+  border: 2px dashed rgb(245, 245, 248);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+/* Styling the article / blogs */
+.article-post {
+  border: 2px solid rgb(221, 33, 33);
+  background-color: #909090;
+  color: whitesmoke;
+}
+
+/* Styling the side-bar */
+.section-2{
+display: flex;
+position: relative;
+right: 0;
+  
+}
+/* Styling the asides */
+.side-bar > p{
+  display: flex;
+}
+
+
+/* Styling Footer */
+.footer {
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+  color: whitesmoke;
+  border: 2px solid black;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+}

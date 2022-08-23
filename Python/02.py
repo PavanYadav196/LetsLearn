@@ -1,11 +1,7 @@
-# Number swaping in python
+# Importing the file / adding modules
 
-a=float(input("Enter the num"))
-b=float(input("Enter the num"))
-print("Before swaping number a={0} and b={1}".format(a,b))
+import os
 
-temp=a
-a=b
-b=temp
+# import tenseflow
 
-print("Before swaping number a={0} and b={1}".format(a,b))
+print("Hello Motherfucker!")

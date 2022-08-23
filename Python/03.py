@@ -1,6 +1,12 @@
-year = int(input("Enter the num"))
+# Type of modules
 
-if year % 4 == 0:
-    print("This is leap year")
-else:
-    print("This is not leap yaer")
+# Built-in modules 
+# External Modules
+
+# This was the files for comment
+
+'''
+This is just example
+'''
+
+# ''' --> This is multi line comment

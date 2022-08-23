@@ -8,11 +8,40 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
   padding: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 50px auto 50px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd "
+    "mn mn mn mn mn mn mn sb sb "
+    "ft ft ft ft ft ft ft ft ft ";
+  gap: 0.5em;
+}
+
+.el {
+  background-color: rebeccapurple;
+  color: whitesmoke;
+  display: grid;
+  place-content: center;
+}
+
+.header {
+  grid-area: hd;
+}
+.sidebar {
+  grid-area: sb;
+}
+.footer {
+  grid-area: ft;
 }
 
 .container {
+  grid-area: mn;
   display: grid;
-  gap: 10px;
+  gap: 1em;
+  /* min-height: 450px; */
+  grid-template-columns: repeat(2, 1fr 2fr);
+  grid-auto-rows: minmax(150px, auto);
 }
 
 .box {
@@ -20,4 +49,22 @@ body {
   color: #fff;
   font-size: 2rem;
   padding: 0.5rem;
+}
+
+.box:first-child {
+  background-color: #bbb;
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-column: 1/4;
+  grid-row: 1/3;
+  display: grid;
+  place-content: center;
+}
+
+.box:nth-child(2) {
+  background-color: purple;
+  grid-column: 1/5;
+  grid-row: 3/5;
 }

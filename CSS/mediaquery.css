@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.5rem "Nunito" sans-serif;
+  min-height: 100vh;
+  background-color: lightblue;
+  color: black;
+  background-image: radial-gradient(whitesmoke, #493834);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #4ef4ea;
+  color: #493834;
+  position: sticky;
+}
+header {
+  top: 0;
+}
+nav {
+  background-color: white;
+  border-bottom: 2px solid black;
+  padding: 0.5em;
+  color: black;
+}
+main {
+  flex-grow: 1;
+}
+footer {
+  bottom: 0;
+}
+
+/* Media Query Syntax */
+/* @media media type and (condition:breakpoint){
+   CSS Rules
+}*/
+
+/*|| Small  */
+/* min-width --> */
+/* @media screen and (min-width: 550px) {
+  body {
+    background-color: purple;
+    background-image: radial-gradient(rgb(99, 74, 237), rgb(21, 232, 137));
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: green;
+    background-image: radial-gradient(whitesmoke, green);
+  }
+  
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    background-color: purple;
+    background-image: radial-gradient(rgb(255, 105, 243), rgb(79, 248, 138));
+  }
+  
+} */
+/* max-width -->  */
+/* XL */
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: red;
+    background-image: radial-gradient(rgb(162, 12, 12), rgb(36, 197, 241));
+  }
+  nav {
+    display: none;
+  }
+}
+/* Laptop */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: firebrick;
+    background-image: radial-gradient(rgb(247, 98, 98), rgb(50, 64, 222));
+  }
+}
+/* Large */
+@media screen and (max-width: 786px) {
+  body {
+    background-color: green;
+    background-image: radial-gradient(rgb(108, 69, 8), rgb(128, 0, 70));
+  }
+}
+/* Medium */
+@media screen and (max-width: 576px) {
+  body {
+    background-color: yellow;
+    background-image: radial-gradient(rgb(122, 100, 79), rgb(241, 252, 28));
+  }
+}
+/* Small */
+@media screen and (max-width: 481px) {
+  body {
+    background-color: purple;
+    background-image: radial-gradient(rgb(99, 74, 237), rgb(21, 232, 137));
+  }
+}

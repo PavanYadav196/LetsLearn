@@ -1,1 +1,1 @@
-document.getElementsByClassName(footer);
+document.getElementsByClassName(container)

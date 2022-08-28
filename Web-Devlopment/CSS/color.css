@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 2px solid red;
+  padding: 1rem;
+  background-color: #3ea696;
+  border-radius: 10px;
+}
+
+h2 {
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+p {
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
